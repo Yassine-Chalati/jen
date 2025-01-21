@@ -7,10 +7,12 @@ pipeline {
 export JAVA_HOME=/opt/java/jdk-21.0.5
 mvn validate package
 
+cd ..
 cd client
 export JAVA_HOME=/opt/java/jdk-21.0.5
 mvn validate package
 
+cd ..
 cd gateway
 export JAVA_HOME=/opt/java/jdk-21.0.5
 mvn validate package'''
